@@ -1,2 +1,2 @@
-# ai-programming-with-python-udacity-nanodegree
+# AI Programming with Python Udacity Nanodegree
 Practices and notes from AI Programming with Python Nanodegree
