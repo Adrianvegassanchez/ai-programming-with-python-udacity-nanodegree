@@ -42,7 +42,7 @@ def main():
     # TODO 0: Measures total program runtime by collecting start time
     start_time = time()
 
-    sleep(40)
+    # sleep(40)
     
     # TODO 1: Define get_input_args function within the file get_input_args.py
     # This function retrieves 3 Command Line Arugments from user as input from
