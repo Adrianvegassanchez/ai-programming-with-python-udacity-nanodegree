@@ -42,4 +42,44 @@ def get_pet_labels(image_dir):
     """
     # Replace None with the results_dic dictionary that you created with this
     # function
-    return None
+    # Retrieve the filenames from folder pet_images/
+    filename_list = listdir(image_dir)
+    results_dic = dict()
+    
+    for idx in range(0, len(filename_list), 1):
+      if filename_list[idx][0] != ".":
+        pet_label = name_format(filename_list[idx])
+        
+        if filename_list[idx] not in results_dic:
+          results_dic[filename_list[idx]] = [pet_label]
+      
+        else:
+          print("** Warning: Duplicate files exist in directory:", filename_list[idx])
+
+    #Iterating through a dictionary printing all keys & their associated values
+    print("\nPrinting all key-value pairs in dictionary results_dic:")
+    for key in results_dic:
+      print(key, ":", results_dic[key][0])
+
+    return results_dic
+
+def name_format(name):
+
+  # Sets string to lower case letters
+  low_pet_image = name.lower()
+
+  # Splits lower case string by _ to break into words 
+  word_list_pet_image = low_pet_image.split("_")
+
+  # Create pet_name starting as empty string
+  pet_name = ""
+
+  # Loops to check if word in pet name is only
+  # alphabetic characters - if true append word
+  # to pet_name separated by trailing space 
+  for word in word_list_pet_image:
+      if word.isalpha():
+          pet_name += word + " "
+
+  # Strip off starting/trailing whitespace characters 
+  return pet_name.strip()
