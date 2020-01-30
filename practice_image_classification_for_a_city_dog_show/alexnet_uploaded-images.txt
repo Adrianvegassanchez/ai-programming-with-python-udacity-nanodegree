@@ -5,15 +5,12 @@ Command Line Arguments:
 
 Pet Image Label Dictionary has 4 key-value pairs.
 Below are 4 of them:
- 1 key:                 T-shirt_01.jpg  label:                           
- 2 key:           Border_Collie_02.jpg  label:              border collie
- 3 key:           Border_Collie_01.jpg  label:              border collie
- 4 key:                    Lynx_01.jpg  label:                       lynx
+ 1 key:           Border_Collie_02.jpg  label:              border collie
+ 2 key:           Border_Collie_01.jpg  label:              border collie
+ 3 key:                    Lynx_01.jpg  label:                       lynx
+ 4 key:                     jersey.jpg  label:                           
 
      MATCH:
-
-                T-shirt_01.jpg: 
-Real:                              Classifier:                          apron
 
           Border_Collie_02.jpg: 
 Real:              border collie   Classifier:                  border collie
@@ -24,15 +21,14 @@ Real:              border collie   Classifier:                  border collie
                    Lynx_01.jpg: 
 Real:                       lynx   Classifier:                           lynx
 
+                    jersey.jpg: 
+Real:                              Classifier:                          apron
+
  NOT A MATCH:
 
 # Total Images 4 # Matches: 4 # NOT Matches: 0
 
      MATCH:
-
-                T-shirt_01.jpg: 
-Real:                              Classifier:                          apron  
-PetLabelDog: 0  ClassLabelDog: 0
 
           Border_Collie_02.jpg: 
 Real:              border collie   Classifier:                  border collie  
@@ -44,6 +40,10 @@ PetLabelDog: 1  ClassLabelDog: 1
 
                    Lynx_01.jpg: 
 Real:                       lynx   Classifier:                           lynx  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    jersey.jpg: 
+Real:                              Classifier:                          apron  
 PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
