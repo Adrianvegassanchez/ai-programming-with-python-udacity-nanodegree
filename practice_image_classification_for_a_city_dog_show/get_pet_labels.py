@@ -56,11 +56,6 @@ def get_pet_labels(image_dir):
         else:
           print("** Warning: Duplicate files exist in directory:", filename_list[idx])
 
-    #Iterating through a dictionary printing all keys & their associated values
-    print("\nPrinting all key-value pairs in dictionary results_dic:")
-    for key in results_dic:
-      print(key, ":", results_dic[key][0])
-
     return results_dic
 
 def name_format(name):
