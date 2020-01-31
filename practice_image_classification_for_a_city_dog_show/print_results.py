@@ -97,7 +97,7 @@ def print_results(results_dic, results_stats_dic, model,
             # index 4 = 0/1 where 1= Classifier Label is a dog, 0 = Classifier Label isn't a dog (ex: 1)
             
             if(sum(results_dic[key][3:]) == 1):
-                if(sum(results_dic[key][3]) == 1):
+                if(results_dic[key][3] == 1):
                     print("Pet image Label is a dog, classfier label isn't a dog : {} - {} "
                     .format(results_dic[key][0], results_dic[key][1]))
                 else:
@@ -121,5 +121,5 @@ def print_results(results_dic, results_stats_dic, model,
                                                           results_dic[key][1]))
    
 
-    None
+    
                 
