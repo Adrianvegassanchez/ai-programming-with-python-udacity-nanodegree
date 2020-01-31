@@ -17,6 +17,7 @@
 #
 ##
 # Imports python modules
+import os
 from os import listdir
 
 # TODO 2: Define get_pet_labels function below please be certain to replace None
@@ -59,9 +60,10 @@ def get_pet_labels(image_dir):
     return results_dic
 
 def name_format(name):
-
+  
+  root_and_ext_tuple = os.path.splitext(name)
   # Sets string to lower case letters
-  low_pet_image = name.lower()
+  low_pet_image = root_and_ext_tuple[0].lower()
 
   # Splits lower case string by _ to break into words 
   word_list_pet_image = low_pet_image.split("_")
