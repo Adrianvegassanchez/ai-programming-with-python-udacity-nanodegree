@@ -80,4 +80,3 @@ def classify_images(images_dir, results_dic, model):
         results_dic[key].append(model_label)
         results_dic[key].append(0)
 
-    None 
