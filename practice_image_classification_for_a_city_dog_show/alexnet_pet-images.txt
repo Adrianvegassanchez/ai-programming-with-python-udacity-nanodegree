@@ -338,4 +338,4 @@ Real:           golden retriever   Classifier:                tibetan mastiff
 Real:             great pyrenees   Classifier:                         kuvasz
 Real:           golden retriever   Classifier:           afghan hound, afghan
 
-** Total Elapsed Runtime: 0:0:3
+** Total Elapsed Runtime: 0:0:2

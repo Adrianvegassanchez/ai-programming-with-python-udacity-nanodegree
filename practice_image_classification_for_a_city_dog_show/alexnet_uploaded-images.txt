@@ -8,7 +8,7 @@ Below are 4 of them:
  1 key:           Border_Collie_02.jpg  label:              border collie
  2 key:           Border_Collie_01.jpg  label:              border collie
  3 key:                    Lynx_01.jpg  label:                       lynx
- 4 key:                     jersey.jpg  label:                           
+ 4 key:                     jersey.jpg  label:                     jersey
 
      MATCH:
 
@@ -21,12 +21,12 @@ Real:              border collie   Classifier:                  border collie
                    Lynx_01.jpg: 
 Real:                       lynx   Classifier:                           lynx
 
-                    jersey.jpg: 
-Real:                              Classifier:                          apron
-
  NOT A MATCH:
 
-# Total Images 4 # Matches: 4 # NOT Matches: 0
+                    jersey.jpg: 
+Real:                     jersey   Classifier:                          apron
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
 
      MATCH:
 
@@ -42,13 +42,13 @@ PetLabelDog: 1  ClassLabelDog: 1
 Real:                       lynx   Classifier:                           lynx  
 PetLabelDog: 0  ClassLabelDog: 0
 
-                    jersey.jpg: 
-Real:                              Classifier:                          apron  
-PetLabelDog: 0  ClassLabelDog: 0
-
  NOT A MATCH:
 
-# Total Images 4 # Matches: 4 # NOT Matches: 0
+                    jersey.jpg: 
+Real:                     jersey   Classifier:                          apron  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
@@ -67,7 +67,7 @@ N Not-Dog Images    :   2
 
 
 *** Results Summary Stadistics for CNN Model Architecture ALEXNET ***
-pct_match           : 100.0
+pct_match           : 75.0
 pct_correct_dogs    : 100.0
 pct_correct_breed   : 100.0
 pct_correct_notdogs : 100.0

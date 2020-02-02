@@ -8,7 +8,7 @@ Below are 4 of them:
  1 key:           Border_Collie_02.jpg  label:              border collie
  2 key:           Border_Collie_01.jpg  label:              border collie
  3 key:                    Lynx_01.jpg  label:                       lynx
- 4 key:                     jersey.jpg  label:                           
+ 4 key:                     jersey.jpg  label:                     jersey
 
      MATCH:
 
@@ -22,7 +22,7 @@ Real:              border collie   Classifier:                  border collie
 Real:                       lynx   Classifier:                           lynx
 
                     jersey.jpg: 
-Real:                              Classifier:     jersey, t-shirt, tee shirt
+Real:                     jersey   Classifier:     jersey, t-shirt, tee shirt
 
  NOT A MATCH:
 
@@ -43,7 +43,7 @@ Real:                       lynx   Classifier:                           lynx
 PetLabelDog: 0  ClassLabelDog: 0
 
                     jersey.jpg: 
-Real:                              Classifier:     jersey, t-shirt, tee shirt  
+Real:                     jersey   Classifier:     jersey, t-shirt, tee shirt  
 PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
@@ -72,4 +72,4 @@ pct_correct_dogs    : 100.0
 pct_correct_breed   : 100.0
 pct_correct_notdogs : 100.0
 
-** Total Elapsed Runtime: 0:0:1
+** Total Elapsed Runtime: 0:0:0
