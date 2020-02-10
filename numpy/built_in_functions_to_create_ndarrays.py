@@ -229,3 +229,12 @@ print('The maximum value in X is:', X.max())
 print('The minimum value in X is:', X.min())
 print('X has', (X < 0).sum(), 'negative numbers')
 print('X has', (X > 0).sum(), 'positive numbers')
+
+# Using the Built-in functions you learned about in the
+# previous lesson, create a 4 x 4 ndarray that only
+# contains consecutive even numbers from 2 to 32 (inclusive)
+
+x = np.linspace(2,32,16).reshape(4,4)
+X = np.arange(2,34,2).reshape(4,4)
+print(X)
+print(x)
